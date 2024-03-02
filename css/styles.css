@@ -35,7 +35,7 @@ a:hover {
   color: var(--green);
 }
 .button:hover {
-  background-color: var(--green);
+  background-color: var();
 }
 .section-main-page {
   width: 1440px;
@@ -48,6 +48,11 @@ a:hover {
   font-family: var(--font-family);
 }
 /* Header Section*/
+
+.header-webstudio {
+  display: inline-flex;
+  margin-top: 20px;
+}
 .box-header {
   display: flex;
   justify-content: center;
@@ -60,13 +65,7 @@ a:hover {
   align-items: center;
   gap: 76px;
 }
-.container-webstudio {
-  width: 115px;
-  height: 24px;
-  display: flex;
-  justify-content: flex-start;
-  margin-right: 10px;
-}
+
 .logo-web {
   font-family: var(--second-family);
   font-weight: 800;
@@ -127,6 +126,14 @@ a:hover {
   letter-spacing: 0.02em;
   color: var(--slate);
 }
+.email {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
 /* Hero Section*/
 .box-hero {
   display: flex;
@@ -135,14 +142,15 @@ a:hover {
   width: 1440px;
   height: 600px;
   main-height: 50vh;
-  background-color: var(--navy-blue);
+  background-image: url(..//images/people-office.jpg);
+  
 }
 .container-button {
   display: flex;
   justify-content: center;
 }
 .hero-section {
-  width: 80%;
+  width: 70%;
   text-align: center;
 }
 .hero-title {
@@ -227,7 +235,24 @@ a:hover {
   display: flex;
   justify-content: center;
 }
+
+/* Customers Section*/
+.customers-section {
+  margin-left: 150px;
+  width: 1128px;
+height: 200px;
+}
+
+.customers {
+  display: flex;
+  justify-content: center;
+}
+
 /* Footer Section*/
+.footer-logo {
+ margin-left: 30px;
+ margin-top: 80px;
+}
 .footer__wrapper {
   display: flex;
   flex-direction: column;
@@ -235,9 +260,23 @@ a:hover {
   height: 312px;
   background-color: var(--navy-blue);
 }
-.footer__logo {
-  display: inline-block;
-  margin: 0 10px;
+.footer-logo-web{
+  font-family: var(--second-family);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 117%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
+}
+.footer-logo-studio {
+  font-family: var(--second-family);
+font-weight: 800;
+font-size: 18px;
+line-height: 117%;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--cloud);
 }
 .footer__logo-container {
   font-family: var(--second-family);
@@ -249,16 +288,7 @@ a:hover {
   color: var(--iris);
   margin-left: 156px;
 }
-.logo-studio {
-  font-family: var(--second-family);
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 117%;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--cloud);
-  margin-left: -1px;
-}
+
 .footer__paragraph {
   font-family: var(--font-family);
   font-weight: 400;
@@ -267,4 +297,8 @@ a:hover {
   letter-spacing: 0.02em;
   color: var(--cloud);
   margin: 140px 1020px 100px 156px;
+}
+.footer__paragraph {
+  margin-left: 30px;
+  margin-top:  5px;
 }
