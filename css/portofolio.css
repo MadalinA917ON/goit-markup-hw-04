@@ -14,6 +14,7 @@
 
   --font-family: "Roboto", sans-serif;
   --second-family: "Raleway", sans-serif;
+  --social-background: #4d5ae5;
 }
 h1,
 h2,
@@ -28,14 +29,23 @@ li,
 a {
   text-decoration: none;
   list-style-type: none;
+  color: var(--slate);
+}
+.button {
+  cursor: pointer;
 }
 .body-section {
+  display: flex;
+  justify-content: center;
   font-family: var(--font-family);
 }
 a:hover {
   color: var(--green);
 }
+
 .box-main-page {
+  display: flex;
+  justify-content: center;
   width: 1440px;
   height: 2592px;
   background: var(--white);
@@ -63,6 +73,7 @@ a:hover {
   text-transform: uppercase;
   color: var(--navy-blue);
 }
+
 .portofolio-nav-bar {
   color: var(--slate);
 }
@@ -73,6 +84,9 @@ a:hover {
   background-color: var(--iris);
 }
 .button-app:hover {
+  background-color: var(--iris);
+}
+.button-Design:hover {
   background-color: var(--iris);
 }
 .button-marketing:hover {
@@ -99,7 +113,8 @@ a:hover {
 }
 .container-heder-contacts {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
+  gap: 20px;
 }
 .heder-mail {
   font-family: var(--font-family);
@@ -129,24 +144,39 @@ a:hover {
 .container-row {
   display: flex;
   justify-content: center;
-  justify-content: space-evenly;
+  gap: 24px;
 }
-/* footer*/
-.footer-section {
+/* Footer Section*/
+.logo-p {
+  width: 264px;
+  height: 112px;
+  margin-left: 100px;
+}
+.footer__wrapper {
   background-color: var(--navy-blue);
+  width: 1440px;
   height: 312px;
 }
-.container-footer-logo {
-  display: flex;
-  width: 115px;
-  height: 24px;
-  margin-left: 15px;
-  margin-top: 10px;
-  width: 115px;
-  height: 24px;
-  margin: 100px 1169 188px 156px;
+.footer-container {
+  gap: 50px;
+  display: inline-flex;
+  align-items: center;
 }
-.footer-web {
+.footer__paragraph {
+  width: 264;
+  height: 72;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: var(--cloud);
+}
+
+.footer-logo {
+  margin-top: 50px;
+}
+.footer-logo-web {
   font-family: var(--second-family);
   font-weight: 800;
   font-size: 18px;
@@ -155,22 +185,44 @@ a:hover {
   text-transform: uppercase;
   color: var(--iris);
 }
-.footer-studio {
+.footer-logo-studio {
   font-family: var(--second-family);
   font-weight: 800;
   font-size: 18px;
   line-height: 117%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: white;
-  margin-left: 1px;
+  color: var(--cloud);
 }
-.footer-paragraph {
+.footer-icon-list {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  gap: 24px;
+}
+.footer-icon-list .icon svg {
+  width: 16px;
+  height: 16px;
+}
+.footer-icon-list .icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--social-background);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media {
+  margin-top: 100px;
+  gap: 5px;
   font-family: var(--font-family);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.02em;
-  color: var(--cloud);
-  margin: 140px 1020px 100px 156px;
+  color: var(--white);
+}
+.icon:hover {
+  color: var(--green);
 }
