@@ -141,10 +141,10 @@ a:hover {
   align-items: center;
   width: 1440px;
   height: 600px;
-  main-height: 50vh;
-  background-image: url(..//images/people-office.jpg);
-  
+  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.4)),
+    url(../images/people-office\ 1.png);
 }
+
 .container-button {
   display: flex;
   justify-content: center;
@@ -203,6 +203,9 @@ a:hover {
   justify-content: space-evenly;
 }
 /* Our team Section */
+.icon {
+  color: black;
+}
 .conainer-our-team {
   width: 1440px;
   height: 732px;
@@ -222,7 +225,7 @@ a:hover {
   text-align: center;
   color: var(--navy-blue);
 }
-.container-our-team-picture {
+.container-our-team-cards {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
@@ -240,7 +243,7 @@ a:hover {
 .customers-section {
   margin-left: 150px;
   width: 1128px;
-height: 200px;
+  height: 200px;
 }
 
 .customers {
@@ -250,8 +253,8 @@ height: 200px;
 
 /* Footer Section*/
 .footer-logo {
- margin-left: 30px;
- margin-top: 80px;
+  margin-left: 30px;
+  margin-top: 80px;
 }
 .footer__wrapper {
   display: flex;
@@ -260,7 +263,10 @@ height: 200px;
   height: 312px;
   background-color: var(--navy-blue);
 }
-.footer-logo-web{
+.footer-social {
+  display: inline-flex;
+}
+.footer-logo-web {
   font-family: var(--second-family);
   font-weight: 800;
   font-size: 18px;
@@ -271,12 +277,12 @@ height: 200px;
 }
 .footer-logo-studio {
   font-family: var(--second-family);
-font-weight: 800;
-font-size: 18px;
-line-height: 117%;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--cloud);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 117%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--cloud);
 }
 .footer__logo-container {
   font-family: var(--second-family);
@@ -300,5 +306,5 @@ color: var(--cloud);
 }
 .footer__paragraph {
   margin-left: 30px;
-  margin-top:  5px;
+  margin-top: 5px;
 }
